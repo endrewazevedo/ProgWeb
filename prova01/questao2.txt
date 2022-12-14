@@ -1,0 +1,5 @@
+
+Existem 3 tipos de seletores utilizaveis:
+    - Classe: Selecionando a classe 'cl1'
+    - tipos: Selecionado o tipo 'span'
+    - Atributo: Selecionado o atributo 'title'

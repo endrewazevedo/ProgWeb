@@ -1,0 +1,18 @@
+
+O Hoisting é uma funcionalidade que permite com que funções sejam chamadas antes da sua declação, a chamada fica armazenada na memória até que seja chamada.
+
+
+Exemplo:
+
+function hoisting(){
+    console.log(a);
+    console.log((exemplo))();
+
+    var a = 1
+    function exemplo(){
+        return 2;
+    }
+}
+
+hoisting();
+
