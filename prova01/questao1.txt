@@ -1,0 +1,11 @@
+Erro 1 - Linha 4 - Sintaxe do comentário:
+    Em HTML um comentário deve ter o seguinte padrão: 
+    <!-- comentário -- >
+
+Erro 2 - Linha 18 - Fechamento:
+    O Elemento <strong> foi aberto no ,entanto, não possui fechamento, fazendo com que o texto inteiro ficasse com essa estilização(Negrito)
+
+Erro 3 - Linha 29 - Função:
+    Foi utilizada como retorno da função 'that.name' ao invés de this.name para manipular elementos locais.
+
+Erro 4 - 
