@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Space Shooter Game</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      #scoreboard {
+        position: absolute;
+        top: 0;
+        left: 20px; /* Adicionado */
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scoreboard">
+      <p><span id="lives"></span></p>
+      <p><span id="score">000000</span></p>
+    </div>
+    <div id="space">
+      <img id="ship" src="assets/player.png" alt="" />
+    </div>
+    <script src="js/game.js"></script>
+    <script>
+      const vida = 3;
+      const livesElement = document.getElementById("lives");
+      for (let i = 0; i < vida; i++) {
+        const lifeImg = document.createElement("img");
+        lifeImg.src = "assets/life.png";
+        livesElement.appendChild(lifeImg);
+      }
+    </script>
+  </body>
+</html>

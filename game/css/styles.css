@@ -1,0 +1,39 @@
+#space {
+  border: 1px solid black;
+  background-image: url("../assets/Background/starBackground.png");
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 800px;
+}
+
+#ship {
+  position: absolute;
+}
+
+.enemy-ship {
+  position: absolute;
+}
+
+.enemy-ufo {
+  position: absolute;
+}
+
+.meteor-big {
+  position: absolute;
+}
+
+.meteor-small {
+  position: absolute;
+}
+
+#scoreboard p {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#score {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: white;
+}
