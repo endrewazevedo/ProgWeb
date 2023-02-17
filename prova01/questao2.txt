@@ -1,3 +1,5 @@
+Apenas o segundo seletor está correto.
+Nota: 0.7
 
 Existem 3 tipos de seletores utilizaveis:
     - Classe: Selecionando a classe 'cl1'

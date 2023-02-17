@@ -1,3 +1,5 @@
+Conceito incompleto, pois não considerou a questão do escopo. Além disso, hoisting tb seve para variáveis.
+Nota: 1.3
 
 O Hoisting é uma funcionalidade que permite com que funções sejam chamadas antes da sua declação, a chamada fica armazenada na memória até que seja chamada.
 
