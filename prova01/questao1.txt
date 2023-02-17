@@ -1,3 +1,6 @@
+Todos os erros foram encontrados corretamente.
+Nota 2.0
+
 Erro 1 - Linha 4 - Sintaxe do comentário:
     Em HTML um comentário deve ter o seguinte padrão: 
     <!-- comentário -- >
