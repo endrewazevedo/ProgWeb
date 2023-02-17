@@ -11,6 +11,7 @@
   
   let space, ship;
   let enemies = [];
+  let shots = [];
   let enemyShipSpeed = 2
   let enemyUFOSpeed = 2
   let enemyMeteorBigSpeed = 1
@@ -33,6 +34,9 @@
         startGame();
       }
     } else if (isStarted){
+      if (e.key === "t"){
+        shots.push(new Shot())
+      }
       if (e.key === "ArrowLeft") ship.mudaDirecao(-1);
       if (e.key === "ArrowRight") ship.mudaDirecao(+1);
       if (e.key === "p") {
@@ -165,6 +169,21 @@
     }
   }
 
+  class Shot {
+    constructor() {
+      this.element = document.createElement("img");
+      this.element.className = "shot";
+      this.element.src = "assets/laserRed.png";
+      this.element.style.bottom = "20px";
+      this.element.style.left = `${parseInt(ship.element.style.left) + (ship.element.offsetWidth / 2)}px`;
+      this.speed = 5
+      space.element.appendChild(this.element);
+    }
+    move() {
+      this.element.style.bottom = `${parseInt(this.element.style.bottom) + this.speed}px`;
+    }
+  }
+
   function increaseObstaclesSpeed() {
     enemyShipSpeed *= (100 + SPEED_INCREASE_PERCENTAGE) / 100;
     enemyUFOSpeed *= (100 + SPEED_INCREASE_PERCENTAGE) / 100;
@@ -191,6 +210,11 @@
       enemies.push(new meteorSmall(enemyMeteorSmallSpeed));
     }
     enemies.forEach((e) => {
+      if (!isPaused) {
+        e.move();
+      }
+    });
+    shots.forEach((e) => {
       if (!isPaused) {
         e.move();
       }
