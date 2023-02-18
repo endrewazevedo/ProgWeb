@@ -28,13 +28,13 @@
   }
 
   window.addEventListener("keydown", (e) => {
-
-    if (e.key === " ") {
-      if (!isStarted) {
+    !isStarted
+    if (!isStarted) {
+      if (e.key === " ") {
         startGame();
       }
     } else if (isStarted){
-      if (e.key === "t"){
+      if (e.key === " "){
         shots.push(new Shot())
       }
       if (e.key === "ArrowLeft") ship.mudaDirecao(-1);
