@@ -36,6 +36,17 @@
   margin-right: 20px;
 }
 
+#start-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: black;
+  z-index: 99999;
+}
+
 #score {
   font-family: "Arial", sans-serif;
   font-size: 24px;

@@ -28,9 +28,10 @@
   }
 
   window.addEventListener("keydown", (e) => {
-    !isStarted
     if (!isStarted) {
       if (e.key === " ") {
+        const startMessage = document.getElementById("start-message");
+        startMessage.remove();
         startGame();
       }
     } else if (isStarted){
