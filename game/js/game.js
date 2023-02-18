@@ -120,7 +120,12 @@
       space.element.appendChild(this.element);
     }
     move() {
+      const top = parseInt(this.element.style.top);
+      const height = this.element.offsetHeight;
       this.element.style.top = `${parseInt(this.element.style.top) + this.speed}px`;
+      if (top + height > space.element.offsetHeight) {
+        this.element.remove();
+      }
     }
   }
 
@@ -135,7 +140,13 @@
       space.element.appendChild(this.element);
     }
     move() {
+      const top = parseInt(this.element.style.top);
+      const height = this.element.offsetHeight;
+
       this.element.style.top = `${parseInt(this.element.style.top) + this.speed}px`;
+      if (top + height > space.element.offsetHeight) {
+        this.element.remove();
+      }
     }
   }
 
@@ -150,7 +161,12 @@
       space.element.appendChild(this.element);
     }
     move() {
+      const top = parseInt(this.element.style.top);
+      const height = this.element.offsetHeight;
       this.element.style.top = `${parseInt(this.element.style.top) + this.speed}px`;
+      if (top + height > space.element.offsetHeight) {
+        this.element.remove();
+      }
     }
   }
 
@@ -165,7 +181,12 @@
       space.element.appendChild(this.element);
     }
     move() {
+      const top = parseInt(this.element.style.top);
+      const height = this.element.offsetHeight;
       this.element.style.top = `${parseInt(this.element.style.top) + this.speed}px`;
+      if (top + height > space.element.offsetHeight) {
+        this.element.remove();
+      }
     }
   }
 
